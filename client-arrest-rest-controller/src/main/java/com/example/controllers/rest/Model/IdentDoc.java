@@ -1,7 +1,5 @@
 package com.example.controllers.rest.Model;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
 import java.util.Date;
 
 public class IdentDoc {
@@ -9,7 +7,7 @@ public class IdentDoc {
     private Integer type;
     private String numberSeries;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+
     private Date issueDate;
 
     public IdentDoc() {

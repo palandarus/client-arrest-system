@@ -1,9 +1,7 @@
 package com.example.entities;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.Date;
 import java.util.Objects;
 
@@ -17,6 +15,7 @@ public class IdentityDocument extends AbstractItem{
     private String numberSeries;
 
     @Column
+    @Temporal(TemporalType.DATE)
     private Date issueDate;
 
     @Column

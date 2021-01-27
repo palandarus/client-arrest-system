@@ -32,7 +32,7 @@ public class ArrestRestController {
 
     @PostMapping(value="/arrestmanage",
             consumes = MediaType.APPLICATION_JSON_VALUE,
-            produces= MediaType.APPLICATION_XML_VALUE)
+            produces= MediaType.APPLICATION_JSON_VALUE)
     public Answer arrestManage(
             @RequestBody String requestId,
             @RequestBody String lastName,

@@ -7,7 +7,6 @@ import java.util.Date;
 public class Arrest extends AbstractItem {
 
     @Column
-    @Temporal(TemporalType.DATE)
     private Date docDate;
 
     @Column(length = 30)
@@ -108,5 +107,13 @@ public class Arrest extends AbstractItem {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public BudjetDepartament getBudjetDepartament() {
+        return budjetDepartament;
+    }
+
+    public void setBudjetDepartament(BudjetDepartament budjetDepartament) {
+        this.budjetDepartament = budjetDepartament;
     }
 }
